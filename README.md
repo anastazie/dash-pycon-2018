@@ -1,6 +1,13 @@
 # Materials for Dash workshop for PyCon CZ 2018
 
-[Workshop info](https://cz.pycon.org/2018/programme/detail/workshop/1/)
+[Workshop info - PyCon CZ page](https://cz.pycon.org/2018/programme/detail/workshop/1/)
+
+## Programme
+
+1. Installation
+1. Introduction into data and Dash [Presentation]()
+1. Dive into Dash using toy examples [Tutorial]
+1. Look closely at migation dash application [App file](https://github.com/anastazie/dash-pycon-2018/blob/master/app.py)
 
 ## Installation
 
