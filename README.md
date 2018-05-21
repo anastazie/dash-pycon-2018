@@ -7,7 +7,10 @@
 1. Installation
 1. Introduction into data and Dash [Presentation]()
 1. Dive into Dash using toy examples [Tutorial]
-1. Look closely at migation dash application [App file](https://github.com/anastazie/dash-pycon-2018/blob/master/app.py)
+1. Look closely at migration dash application 
+    - [Link to website](https://dash-migration.herokuapp.com)
+    - [Prepare data](https://github.com/anastazie/dash-pycon-2018/blob/master/prepare_data.ipynb)
+    - [App file](https://github.com/anastazie/dash-pycon-2018/blob/master/app.py)
 
 ## Installation
 
