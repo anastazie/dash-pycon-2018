@@ -42,7 +42,14 @@ for more details ee [Stack Overflow discussion](https://stackoverflow.com/questi
 
 `pip3 install -r requirements.txt`
 
+## Testing installation
 
-
+1. Clone this repository `git clone git@github.com:anastazie/dash-pycon-2018.git` or `git clone https://github.com/anastazie/dash-pycon-2018.git`
+1. In your terminal:
+    ```
+    cd dash-pycon-2018
+    python3 app.py
+    ```
+If you are able to see running application it means that installation was successful :)
 
 
