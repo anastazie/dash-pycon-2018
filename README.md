@@ -1,6 +1,16 @@
 # Materials for Dash workshop for PyCon CZ 2018
 
-[Workshop info](https://cz.pycon.org/2018/programme/detail/workshop/1/)
+[Workshop info - PyCon CZ page](https://cz.pycon.org/2018/programme/detail/workshop/1/)
+
+## Programme
+
+1. Installation
+1. Introduction into data and Dash [Presentation]()
+1. Dive into Dash using toy examples [Tutorial]
+1. Look closely at migration dash application 
+    - [Link to website](https://dash-migration.herokuapp.com)
+    - [Prepare data](https://github.com/anastazie/dash-pycon-2018/blob/master/prepare_data.ipynb)
+    - [App file](https://github.com/anastazie/dash-pycon-2018/blob/master/app.py)
 
 ## Installation
 
@@ -32,7 +42,14 @@ for more details ee [Stack Overflow discussion](https://stackoverflow.com/questi
 
 `pip3 install -r requirements.txt`
 
+## Testing installation
 
-
+1. Clone this repository `git clone git@github.com:anastazie/dash-pycon-2018.git` or `git clone https://github.com/anastazie/dash-pycon-2018.git`
+1. In your terminal:
+    ```
+    cd dash-pycon-2018
+    python3 app.py
+    ```
+If you are able to see running application it means that installation was successful :)
 
 
