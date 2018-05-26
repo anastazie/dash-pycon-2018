@@ -12,4 +12,4 @@ Wouldnt it be interesting to know more about these activities? (*Spoiler*: yes, 
 
 Then go ahead and add one more item to our dropdown menu named `Play with cars` with value name `cars`.
 
-![]()
+![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated1.gif)
