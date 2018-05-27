@@ -10,24 +10,26 @@ app = dash.Dash()
 
 app.layout = html.Div(children=[
 
-	html.Div([
-		html.Label('Hello, What do you like to do in your free time')],
-		style={
+	html.Div(html.Label('Hello, what do you like to do in your free time?'),
+			 style = {
+				 'display': 'inline-block', 'vertical-align': 'middle',
+				 'textAlign': 'center', 'font-size': '1.6em', 'width': '40%'
+			 }),
+	html.Div(
+		dcc.Dropdown(
+			id = 'example-dropdown',
+			options = [
+				{'label': 'Read books', 'value': 'read'},
+				{'label': 'Bake cakes', 'value': 'bake'},
+			],
+			value = ''
+		), style = {
 			'display': 'inline-block', 'vertical-align': 'middle',
 			'textAlign': 'center', 'font-size': '1.6em', 'width': '40%'
-	}),
+		}),
 
-	dcc.Dropdown(
-	 id='example-dropdown',
-		options=[
-			{'label': 'Read books', 'value': 'read'},
-			{'label': 'Bake cakes', 'value': 'bake'},
-		],
-		value=''
-	),
-
-    dcc.Graph(
-        id='example-gplot',
+	dcc.Graph(
+        id='example-plot',
         figure={
             'data': [
             	go.Bar(x=[1], y=[628], name='Paperback'),
