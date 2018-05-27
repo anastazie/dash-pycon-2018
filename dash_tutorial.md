@@ -87,6 +87,7 @@ Here, we are also specifying `index_col` parameter, because our CSV fike already
 *Note: if you want, you can look more at the data unig Jupyter Notebook by running `jupyter notebook` in your terminal and creating python file.*
 
 Look at the beggining of the file using `cakes.head()`. 
+If you want to know what columns are in `DataFrame`, use `columns` attribute. Then, if you want to select one column, use `cakes.angle` or `cakes['angle']` notations. For selecting multiple columns use `.loc` - `cakes.loc[, ['angle', 'recipe]]`. You can also use `.loc` to select rows - `cakes.loc[[6,7,12]]`.
 
 Next function that we will be using is `groupby`, which is grouping by table by the specified column to perform various functions (`mean`, `median`, `describe`, etc.).
 
@@ -95,3 +96,22 @@ Here is how we can get mean values of breakage angle by temperature:
 ```python
 cakes.groupby('temperature').angle.mean()
 ```
+
+Here is the most interesting part, create scatter plot, where x axis is baking temperature (`temperature`) and y-axis is breakage angle (`angle`). But this is not all, use `value` in dropdown menu to decide in `update_plot` function what plot to show, so it will be something like this:
+
+```python
+def update_plot(chice):
+  if choice == 'read':
+    # create barplot from books data
+    return fig
+  if choice == 'bake':
+    # create scatter plot from cake data
+    return fig
+  if choice == 'cars':
+		fig = dict(data = [], layout = {})
+		return fig
+```
+![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated2.gif)
+
+
+
