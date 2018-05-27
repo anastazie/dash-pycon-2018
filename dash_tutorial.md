@@ -117,6 +117,6 @@ Last step is to add box plot with toy cars data. Make box plot for each car (`ca
 
 Here is how your app should like like:
 
-![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated2.gif)
+![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated3.gif)
 
 Now have a break, it was intense ☕
