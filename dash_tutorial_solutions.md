@@ -28,3 +28,22 @@ dcc.Dropdown(
 			value='read'
 		)
 ```
+
+2. ## Adding markdown.
+
+For this task we will use `dcc.Markdown` component:
+
+```
+dcc.Markdown('''*Source:* [books](http://math.furman.edu/~dcs/courses/math47/R/library/DAAG/html/allbacks.html),
+		[cakes](https://vincentarelbundock.github.io/Rdatasets/doc/lme4/cake.html),
+		[toy cars](http://math.furman.edu/~dcs/courses/math47/R/library/DAAG/html/toycars.html)'''),
+```
+In order to align this text to center, we need to wrap it into `html.Div` component and use it's `style` parameter (specifically set `'text-align'` to `'center'`). We can also set other parameters of `style`, such as `font-size`:
+```
+html.Div(
+		dcc.Markdown('''*Source:* [books](http://math.furman.edu/~dcs/courses/math47/R/library/DAAG/html/allbacks.html),
+		[cakes](https://vincentarelbundock.github.io/Rdatasets/doc/lme4/cake.html),
+		[toy cars](http://math.furman.edu/~dcs/courses/math47/R/library/DAAG/html/toycars.html)'''),
+		style={'textAlign': 'center', 'font-size': '1.6em'}
+	)
+```
