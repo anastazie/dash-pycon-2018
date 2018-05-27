@@ -100,7 +100,7 @@ cakes.groupby('temperature').angle.mean()
 Here is the most interesting part, create scatter plot, where x axis is baking temperature (`temperature`) and y-axis is breakage angle (`angle`). But this is not all, use `value` in dropdown menu to decide in `update_plot` function what plot to show, so it will be something like this:
 
 ```python
-def update_plot(chice):
+def update_plot(choice):
   if choice == 'read':
     # create barplot from books data
     return fig
@@ -113,5 +113,10 @@ def update_plot(chice):
 ```
 ![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated2.gif)
 
+Last step is to add box plot with toy cars data. Make box plot for each car (`car`) on distance (`distance`) using `go.Box`.
 
+Here is how your app should like like:
 
+![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated2.gif)
+
+Now have a break, it was intense ☕
