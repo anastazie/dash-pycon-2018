@@ -29,7 +29,7 @@ Let's now look more into the structure of plot and move books plot to `update_pl
 ###  🚀 Speed of light intoduction into plotly
 
 Plot using plotly library contain two major parts: data and layout. Here is an example of easy barplot:
-```
+```python
 trace1 = go.Bar(x=[1], y=[628], name='Paperback')
 trace2 = go.Bar(x=[1], y=[796], name='Hard book')
 
@@ -55,7 +55,7 @@ Last line is then putting it all together by creating dictionary of dictionaries
 In this tutorial, we will do barplots, scatterplots ([`go.Scatter`](https://plot.ly/python/line-and-scatter/)) and boxplots ([`go.Box`](https://plot.ly/python/box-plots/)).
 
 Because dont want any data to be hard-coded into UI of our app, we will create ploltly plot inside our `update_plot` function (using code above) and erase data from `dcc.Graph` like this:
-```
+```python
 dcc.Graph(
         id='example-plot',
         figure={
@@ -75,3 +75,23 @@ The only one more thing we need to change is to make `update_plot` function to r
 Like, seriously, you can't do data preprocessing in Python without using `pandas`. It has enormous amout of nice functions, but we will look only on few of them. Feel free to take at least [10 minutes intro](https://pandas.pydata.org/pandas-docs/stable/10min.html) after the workshop.
 
 We will work with data by loading them using `pd.read_csv` function (you don't need to download data, just pass URL) into `pd.DataFrame` object.
+
+```python
+cakes = pd.read_csv(
+    'https://vincentarelbundock.github.io/Rdatasets/csv/lme4/cake.csv',
+    index_col=0
+)
+```
+Here, we are also specifying `index_col` parameter, because our CSV fike already contains index as it's first column.
+
+*Note: if you want, you can look more at the data unig Jupyter Notebook by running `jupyter notebook` in your terminal and creating python file.*
+
+Look at the beggining of the file using `cakes.head()`. 
+
+Next function that we will be using is `groupby`, which is grouping by table by the specified column to perform various functions (`mean`, `median`, `describe`, etc.).
+
+Here is how we can get mean values of breakage angle by temperature:
+
+```python
+cakes.groupby('temperature').angle.mean()
+```
