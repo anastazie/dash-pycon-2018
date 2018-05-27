@@ -69,3 +69,7 @@ dcc.Graph(
 The only one more thing we need to change is to make `update_plot` function to return `fig`
 
 ###  🚀 Speed of light intoduction into pandas
+
+`Pandas` is cool. Like, seriously, you can't do data preprocessing in Python without using `pandas`. It has enormous amout of nice functions, but we will look only on few of them. Feel free to take at least [10 minutes intro](https://pandas.pydata.org/pandas-docs/stable/10min.html) after the workshop.
+
+We will work with data by loading them using `pd.read_csv` function (you dont need to download data, just pass URL) into `pd.DataFrame` object.
