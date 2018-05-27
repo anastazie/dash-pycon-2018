@@ -80,4 +80,4 @@ Few comments on this code:
 - Mean value is computed on grouped data
 - To show both points and lines in scatterplot, `mode = 'markers+lines'` is used
 
-In the same way, boxplot is created for toy cars data. You can see resulting file [here](https://github.com/anastazie/dash-pycon-2018/blob/master/example_project5.gif)
+In the same way, boxplot is created for toy cars data. You can see resulting file [here](https://github.com/anastazie/dash-pycon-2018/blob/master/example_project5.py)
