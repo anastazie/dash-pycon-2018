@@ -31,7 +31,7 @@ Let's now look more into the structure of plot and move books plot to `update_pl
 Plot using plotly library contain two major parts: data and layout. Here is an example of easy barplot:
 ```python
 trace1 = go.Bar(x=[1], y=[628], name='Paperback')
-trace2 = go.Bar(x=[1], y=[796], name='Hard book')
+trace2 = go.Bar(x=[1], y=[796], name='Hardcover')
 
 layout = go.Layout(
   title = 'Book weight in grams',
@@ -117,6 +117,6 @@ Last step is to add box plot with toy cars data. Make box plot for each car (`ca
 
 Here is how your app should like like:
 
-![](https://github.com/anastazie/dash-pycon-2018/blob/master/animated3.gif)
+![](https://github.com/anastazie/dash-pycon-2018/blob/master/gif3_3.png)
 
 Now have a break, it was intense ☕
