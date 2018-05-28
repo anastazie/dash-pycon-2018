@@ -33,7 +33,7 @@ app.layout = html.Div(children=[
         figure={
             'data': [
             	go.Bar(x=[1], y=[628], name='Paperback'),
-                go.Bar(x=[1], y=[796], name='Hard book')
+                go.Bar(x=[1], y=[796], name='Hardcover')
             ],
             'layout': {
                 'title': 'Book weight in grams'

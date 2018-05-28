@@ -54,7 +54,7 @@ app.layout = html.Div(children=[
 def update_plot(choice):
 	if choice == 'read':
 		trace1 = go.Bar(x=[1], y=[628], name='Paperback')
-		trace2 = go.Bar(x=[1], y=[796], name='Hard book')
+		trace2 = go.Bar(x=[1], y=[796], name='Hardcover')
 
 		layout = go.Layout(
 			title = 'Book weight in grams',
