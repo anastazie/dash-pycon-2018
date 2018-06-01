@@ -76,7 +76,7 @@ The only one more thing we need to change is to make `update_plot` function to r
 
 Like, seriously, you can't do data preprocessing in Python without meeting `pandas`. It has enormous amout of nice functions, but we will look only at a few of them. I recommend you to take at least [10 minutes intro](https://pandas.pydata.org/pandas-docs/stable/10min.html) after the workshop.
 
-We will work with data by loading them using `pd.read_csv` function (you don't need to download data, just pass URL) into `pd.DataFrame` object.
+We will work with data by loading them using `pd.read_csv` function (you don't need to download data, just pass URL). It produces a `pd.DataFrame` object. This data type is a table with numbered rows. The same that you can see in Excel. 
 
 ```python
 cakes = pd.read_csv(
