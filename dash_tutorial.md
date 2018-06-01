@@ -5,7 +5,7 @@ that we will improve.
 
 In our example we have data about books. Data comes from 
 [the bookshelf of J. H. Maindonald](http://math.furman.edu/~dcs/courses/math47/R/library/DAAG/html/allbacks.html), 
-who, apparently, like to read.
+who, apparently, likes to read.
 
 What do you like to do in your free time: read, bake or maybe play with toy cars? 
 Wouldn't it be interesting to know more about these activities? (*Spoiler*: yes, it would be interesting)
