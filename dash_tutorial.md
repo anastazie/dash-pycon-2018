@@ -48,7 +48,7 @@ data = [trace1, trace2]
 fig = dict(data = data, layout = layout)
 ```
 
-`trace1` and `trace2` define data using plotly `go.Bar` object. 
+`trace1` and `trace2` define data using plotly `go.Bar` object (we are using `go.Bar` because we want to draw barplot). 
 Layout is made by using `go.Layout` object with varios parameter (look [docmentation](https://plot.ly/python/reference/) 
 and [examples](https://plot.ly/python/bar-charts/)).
 
