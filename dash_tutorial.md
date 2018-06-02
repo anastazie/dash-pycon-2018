@@ -86,7 +86,7 @@ cakes = pd.read_csv(
 ```
 Here, we are also specifying `index_col` parameter, because our CSV fike already contains index as it's first column.
 
-*Note: if you want, you can look more at the data using Jupyter Notebook by running `jupyter notebook` in your terminal and creating python file.*
+*Note: if you want, you can look more at the data using Jupyter Notebook by running `jupyter notebook` in your terminal and creating python3 notebook file in Jupyter Notebook dashboard, more infor [here](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html)*
 
 :scream_cat: **Task:** Look at the beggining of the file using `cakes.head()`. 
 If you want to know what columns are in `DataFrame`, use `columns` attribute. Then, if you want to select one column, use `cakes.angle` or `cakes['angle']` notations. For selecting multiple columns use `.loc` - `cakes.loc[, ['angle', 'recipe]]`. You can also use `.loc` to select rows - `cakes.loc[[6,7,12]]`.
