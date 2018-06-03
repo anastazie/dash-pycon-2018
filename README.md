@@ -25,6 +25,8 @@
 
 #### Python libraries
 1. Install dependencies located in `requirements.txt` using following command in GitBash: `while read requirement; do conda install --yes $requirement || pip3 install $requirement; done < requirements.txt`
+If this is not working try following in Anaconda Prompt:
+`python -m pip install -r requirements.txt`
 
 for more details ee [Stack Overflow discussion](https://stackoverflow.com/questions/35802939/install-only-available-packages-using-conda-install-yes-file-requirements-t/)
 
